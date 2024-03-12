@@ -7,37 +7,38 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body style="background-image: url(/firebase-auth-main/assets/img/fondo.png);">
+<body>
  <!--HOLAA PROFEEE-->  
 
   
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid" style="background-image: url(/firebase-auth-main/assets/img/fondo.png); 
-     background-position: center; background-repeat: no-repeat; background-attachment: fixed;"
-     style="background-color: rgb(240, 240, 240); box-shadow: 2px;">
-      <img class="logo33" src="/firebase-auth-main/assets/img/klipartz.com.png" alt="1" style="width: 5%;">
+    <div class="container-fluid" style="background-color: olivedrab;">
+      <img class="logo33" src="/firebase-auth-main/assets/img/logo.png"  alt="1" style="width: 5%;">
 
-      <a class="navbar-brand" href="#">MLPF</a>
+      <a class="navbar-brand" href="#" style="font-size: 33px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">MICHICATS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signin-modal">Iniciar sesión</a>
+            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signin-modal" style="font-size: 20px; color: #000;">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signup-modal">Registrarse</a>
+            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signup-modal" 
+            style="font-size: 20px; color: black;" >Registrarse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link logged-in" id="logout" href="#">Logout</a>
+            <a class="nav-link logged-in" id="logout" href="#" style="font-size: 20px; color: black;">Cerrar sesión</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <h1>Autenticación con Firebase</h1>
+  
+  <h1 style="text-align: center;">Autenticación con Firebase</h1>
 
   <!--Cómo estáss?-->
 
@@ -45,11 +46,12 @@
     <div class="col-md-6" id="task-form-container">
       <div id="create-tasks">
         <form id="create-form">
-          <label for="task-title">Title:</label>
+          <label for="task-title" style="font-size: 20px; color: black;">Titulo:</label>
           <input type="text" id="task-title" />
-          <label for="task-content">Content:</label>
-          <textarea id="task-content" cols="30" rows="5"></textarea>
-          <button type="submit" id="btn-task-save">Create Task</button>
+          <label for="task-content" style="font-size: 20px; color: black;">Contenido:</label>
+          <textarea id="task-content" cols="30" rows="5" style="font-size: 20px; color: black;"></textarea>
+          <button type="submit" id="btn-task-save" style="font-size: 20px; color: black;">
+            Crear tarea</button>
         </form>
       </div>
     </div>

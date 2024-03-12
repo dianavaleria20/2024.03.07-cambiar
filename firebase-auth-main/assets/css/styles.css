@@ -2,3 +2,10 @@
    width: 10%;
 }
 
+body{
+   background-image: url("/firebase-auth-main/assets/img/planta.jpg");
+   background-position: 90%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
